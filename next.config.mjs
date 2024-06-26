@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "6valley.6amtech.com",
+        hostname: "6valley.6amtech.com", // adding url
         pathname: "**",
       },
     ],
