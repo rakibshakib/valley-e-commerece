@@ -4,6 +4,15 @@
 @import "../style/cart.css";
 
 @layer utilities {
+    .flex-center-between {
+        @apply flex justify-between items-center flex-row;
+    }
+    .flex-center{
+        @apply flex items-center flex-row;
+    }
+    .flex-column {
+        @apply flex flex-col;
+    }
 
     /* Hide scrollbar for Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
