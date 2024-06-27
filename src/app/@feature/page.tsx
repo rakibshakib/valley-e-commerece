@@ -3,13 +3,14 @@
 // };
 // import React from 'react'
 
-const Featuate = () => {
+import FeatureMenuBar from "@/components/Featuate/FeatureMenuBar";
+
+const Feature = () => {
   return (
     <div>
-      Featuate pages here 
+      <FeatureMenuBar />
     </div>
-  )
-}
+  );
+};
 
-export default Featuate
-
+export default Feature;
