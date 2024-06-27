@@ -1,10 +1,11 @@
-import ProductCart from "@/components/ProductCart";
-import Image from "next/image";
+import Featuate from "./@feature/page";
+import Products from "./@products/page";
 
 export default function Home() {
   return (
-    <div className="flex justify-center">
-      <ProductCart />
+    <div className="flex flex-col justify-center">
+      <Featuate />
+      <Products />
     </div>
   );
 }

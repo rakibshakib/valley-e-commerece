@@ -1,0 +1,79 @@
+import React from "react";
+import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import { TbTruckDelivery } from "react-icons/tb";
+import { MdOutlinePayment } from "react-icons/md";
+import { MdOutlineSupportAgent } from "react-icons/md";
+import { MdOutlineLanguage } from "react-icons/md";
+import { FaApple } from "react-icons/fa";
+import { IoLogoAndroid } from "react-icons/io";
+
+const dateSet = [
+  {
+    id: 1,
+    icon: <RiMoneyDollarCircleLine className="text-3xl" />,
+    title: "Greate Value",
+    description: "We offer competitive prices on over 100 million items",
+  },
+  {
+    id: 2,
+    icon: <TbTruckDelivery className="text-3xl" />,
+    title: "Whole Country Shipping",
+    description: "We ship all over the country at any time, anywhere",
+  },
+  {
+    id: 3,
+    icon: <MdOutlinePayment className="text-3xl" />,
+    title: "Safe Payment",
+    description: "Pay with secure payment method",
+  },
+  {
+    id: 4,
+    icon: <MdOutlineSupportAgent className="text-3xl" />,
+    title: "24/7 Support",
+    description: "Pay with secure payment method",
+  },
+  {
+    id: 5,
+    icon: <MdOutlineLanguage className="text-3xl" />,
+    title: "Multiple Language",
+    description: "Our comes with multiple language support",
+  },
+  {
+    id: 6,
+    icon: (
+      <span className="flex justify-between items-center">
+        <FaApple className="text-3xl" /> &nbsp;{" "}
+        <IoLogoAndroid className="text-3xl" />
+      </span>
+    ),
+    title: "Multiple Language",
+    description: "Our comes with multiple language support",
+  },
+];
+
+const FooterBanner = () => {
+  return (
+    <div className="flex items-center justify-between my-3 w-[80%] mx-auto">
+      {dateSet?.map((item, index) => (
+        <div
+          key={item.id}
+          className={`w-[300px] h-[180px] pl-2 pr-2 mx-2 ${
+            index !== dateSet.length - 1 ? "border-r-2 border-r-gray-200" : ""
+          } `}
+        >
+          <div className={`flex flex-col text-center`}>
+            <div className="flex items-center justify-center mt-3">
+              {item.icon}
+            </div>
+            <div className="my-3">
+              <h3 className="font-semibold text-base">{item.title}</h3>
+              <p className="mt-3 text-[12px]">{item.description}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default FooterBanner;
