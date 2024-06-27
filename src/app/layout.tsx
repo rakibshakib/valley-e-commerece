@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Mulish } from "next/font/google";
 import "./globals.css";
 import FooterContainer from "@/components/footer/FooterContainer";
+import NavbarContaner from "@/components/navbar/NavbarContaner";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Mulish({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "6 Valley",
@@ -20,7 +21,7 @@ export default function RootLayout({ children, feature, products }: Props) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <h2>Header</h2>
+        <NavbarContaner />
         {feature}
         {children}
         {products}

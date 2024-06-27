@@ -53,12 +53,12 @@ const dateSet = [
 
 const FooterBanner = () => {
   return (
-    <div className="flex items-center justify-between my-3 w-[80%] mx-auto">
+    <div className="flex items-center flex-col md:flex-row lg:flex-row md:justify-between lg:justify-between my-3 w-[80%] mx-auto">
       {dateSet?.map((item, index) => (
         <div
           key={item.id}
           className={`w-[300px] h-[180px] pl-2 pr-2 mx-2 ${
-            index !== dateSet.length - 1 ? "border-r-2 border-r-gray-200" : ""
+            index !== dateSet.length - 1 ? "border-b-2 border-b-gray-200 md:border-b-0 md:border-r-2 md:border-r-gray-200 lg:border-r-gray-20" : ""
           } `}
         >
           <div className={`flex flex-col text-center`}>

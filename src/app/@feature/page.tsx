@@ -6,7 +6,7 @@
 const Featuate = () => {
   return (
     <div>
-      Featuate pages
+      Featuate pages here 
     </div>
   )
 }

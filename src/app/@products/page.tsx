@@ -5,16 +5,13 @@
 //         </h1>
 //     )
 // }
-import React from 'react'
+import React from "react";
 
 const Products = () => {
-  return (
-    <div>
-      products
-    </div>
-  )
-}
+  for (let index = 0; index < 100000000; index++) {
 
-export default Products
+  }
+  return <div>products</div>;
+};
 
-
+export default Products;

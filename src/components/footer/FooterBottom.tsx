@@ -6,8 +6,15 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const FooterBottom = () => {
   return (
-    <>
-      <div className="bg-blue-900 h-[65px] pt-2">
+    <div
+      style={{
+        backgroundImage: "url('./images/footerBg.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="bg-[#1B7FED] bg-opacity-45  h-[65px] pt-2">
         <div className="grid grid-cols-3 justify-items-center content-center">
           <div className="w-[100px] "></div>
           <div className="social-media-icon mt-3 ">
@@ -28,7 +35,7 @@ const FooterBottom = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-500 h-[300px]">
+      <div className="bg-black bg-opacity-70  h-[300px]">
         <div className="grid grid-cols-4 text-white w-[80%] mx-auto">
           <div>Social media</div>
           <div>
@@ -60,10 +67,10 @@ const FooterBottom = () => {
           </div>
         </div>
       </div>
-      <div className="bg-blue-900 h-[30px] text-white text-center text-sm">
+      <div className="bg-[#1B7FED] bg-opacity-35   h-[30px] text-white text-center text-sm">
         All rights reserved by © 2021
       </div>
-    </>
+    </div>
   );
 };
 
