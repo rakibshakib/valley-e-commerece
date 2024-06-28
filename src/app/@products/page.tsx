@@ -1,9 +1,7 @@
 import ProductList from "@/components/Product/ProductList";
 import ProductSlider from "@/components/Product/ProductSlider";
 import NoData from "@/components/common/NoData";
-import ProductCart from "@/components/common/ProductCart";
 import { apiHelper } from "@/utils/helper";
-import Image from "next/image";
 
 const Products = async () => {
   const data = await apiHelper.getAllTopRatedProduct();
