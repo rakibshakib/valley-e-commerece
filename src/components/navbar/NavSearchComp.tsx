@@ -12,7 +12,7 @@ const NavSearchComp = () => {
   return (
     <div className="layout-width">
       <div className="flex-column md:flex-center-between lg:flex-center-between py-5">
-        <div>
+        <div className="flex items-center justify-center">
           <Image
             src="/images/6vally-logo.png"
             width={160}

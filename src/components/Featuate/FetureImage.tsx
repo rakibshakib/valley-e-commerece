@@ -3,9 +3,9 @@ import React from "react";
 
 const FetureImage = () => {
   return (
-    <div className="grid grid-rows-3 grid-cols-3 gap-x-2 gap-y-3 h-[380px]">
+    <div className="grid grid-cols-1 md:grid-rows-3 md:grid-cols-3 gap-x-2 gap-y-3 h-[380px]">
       <div
-        className="col-span-2 row-span-2"
+        className="md:col-span-2 md:row-span-2"
         style={{
           width: "100%",
           height: "245px",
@@ -23,7 +23,7 @@ const FetureImage = () => {
         />
       </div>
       <div
-        className="row-span-3"
+        className="md:row-span-3 hidden md:block"
         style={{
           width: "100%",
           height: "400px",
