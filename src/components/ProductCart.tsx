@@ -3,10 +3,40 @@ import Image from "next/image";
 import React from "react";
 import { IoMdFlash } from "react-icons/io";
 import Rating from "./Rating";
+import { IoEyeOutline } from "react-icons/io5";
+import { MdCompareArrows } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa";
+import { FaCartPlus } from "react-icons/fa";
 
 function getRandomIndex(max: number) {
   return Math.floor(Math.random() * max);
 }
+const imageIconHoverList: {
+  icon: React.JSX.Element;
+  text: string;
+  onclick: () => void;
+}[] = [
+  {
+    icon: <FaCartPlus className="text-[13px] " />,
+    text: "Add to cart",
+    onclick: () => console.log("add to cart"),
+  },
+  {
+    icon: <FaRegHeart className=" text-[13px]" />,
+    text: "Add to wishlist",
+    onclick: () => console.log("add to wishlist"),
+  },
+  {
+    icon: <MdCompareArrows className=" text-[13px]" />,
+    text: "Add to compare",
+    onclick: () => console.log("add to compare"),
+  },
+  {
+    icon: <IoEyeOutline className="text-[13px]" />,
+    text: "Quick view",
+    onclick: () => console.log("quick view"),
+  },
+];
 
 const ProductCart = ({ product }: { product: IProductCart }) => {
   return (
@@ -20,6 +50,7 @@ const ProductCart = ({ product }: { product: IProductCart }) => {
             width: "208px",
             borderRadius: "5px",
           }}
+          className="group"
         >
           <Image
             src={`${productImg}/${
@@ -32,8 +63,21 @@ const ProductCart = ({ product }: { product: IProductCart }) => {
               width: "100%",
               height: "100%",
             }}
-            className="rounded hover:scale-110 hover:transition-all hover:duration-300 ease-[ease-in-out] cursor-pointer"
+            className="rounded hover:scale-110 hover:transition-all hover:duration-300 ease-[ease-in-out] cursor-pointer group"
           />
+          <div className="absolute top-[10px] right-[10px] z-50 hidden group-hover:block group-hover:transition-all group-hover:duration-300 ease-[ease-in-out]">
+            <div className="flex flex-col gap-y-2 z-50">
+              {imageIconHoverList.map((item, index) => (
+                <li
+                  key={index}
+                  className="list-none bg-white p-2 border border-[#1B7FED] rounded-full shadow-2xl hover:bg-[#1B7FED] hover:text-white cursor-pointer text-[#1B7FED] "
+                  // onClick={item.onclick} // not client component
+                >
+                  {item.icon}
+                </li>
+              ))}
+            </div>
+          </div>
         </div>
         <section className="absolute top-[11px] left-[11px] ">
           <div className="flex justify-between w-[225px]">
@@ -60,7 +104,10 @@ const ProductCart = ({ product }: { product: IProductCart }) => {
             {product?.name?.slice(0, 20)}...
           </p>
           <p className="group-hover:text-red-600 ">
-            <s><small>{product?.unit_price}$</small></s> <span className="font-bold">{product?.purchase_price}$</span>
+            <s>
+              <small>{product?.unit_price}$</small>
+            </s>{" "}
+            <span className="font-bold">{product?.purchase_price}$</span>
           </p>
         </div>
       </div>

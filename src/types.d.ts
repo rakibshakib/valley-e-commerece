@@ -13,3 +13,8 @@ interface IProductCart {
   images: string[];
   flash_deal_products: any[];
 }
+
+interface RatingProps {
+  rating: number;
+  totalStars?: number;
+}
