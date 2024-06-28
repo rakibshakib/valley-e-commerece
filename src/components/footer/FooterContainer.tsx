@@ -5,7 +5,7 @@ import FooterNewLetter from "./FooterNewLetter";
 
 const FooterContainer = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-40">
       <FooterBanner />
       <FooterNewLetter />
       <FooterBottom />
