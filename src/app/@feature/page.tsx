@@ -12,7 +12,7 @@ const Feature = () => {
     <div>
       <FeatureMenuBar />
       <div className="w-[80%] mx-auto">
-        <div className="flex gap-x-10">
+        <div className="flex gap-x-5">
           <FeturesSideMenu />
          <div className="">
          <FetureImage />
