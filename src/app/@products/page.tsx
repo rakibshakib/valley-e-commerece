@@ -11,7 +11,7 @@ const Products = async () => {
       {data?.products?.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 justify-items-center md:justify-items-start lg:justify-items-start gap-5 my-4">
           {data?.products?.map((product: any) => (
-            <ProductCart key={product.id} product={product} />
+            <ProductCart key={product.id} product={product} isNews={false} />
           ))}
         </div>
       ) : (

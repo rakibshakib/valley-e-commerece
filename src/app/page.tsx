@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="flex flex-col justify-center bg-[#FFFFFF] my-5">
@@ -13,7 +15,16 @@ export default function Home() {
             <li className="cursor-pointer">Top Rated</li>
             <li className="cursor-pointer">Best Selling</li>
             <li className="cursor-pointer">Latest Products</li>
-            <li className="cursor-pointer">New Arrivals</li>
+            <li className="cursor-pointer flex">
+              New Arrivals{" "}
+              <Image
+                src={"/images/new.png"}
+                alt="new tab menu"
+                height={25}
+                width={25}
+                className="ml-2"
+              />
+            </li>
           </ul>
         </div>
       </div>
