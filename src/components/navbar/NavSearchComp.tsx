@@ -42,20 +42,26 @@ const NavSearchComp = () => {
           </p>
           <p className="border-l-2 pl-3 relative">
             <MdCompareArrows />
-            <span className="bg-blue-600 px-1 w-[18px] h-[18px] text-[10px] rounded-full text-white absolute border-white border-3 text-center top-[-8px] left-7">
-              3
+            <span className="absolute top-[-15px] left-7">
+              <span className="bg-[#1B7FED] px-1  w-[30px] h-[30px]  text-[12px] rounded-full text-white border-white border-3 text-center">
+                3
+              </span>
             </span>
           </p>
           <p className="border-l-2 pl-3 relative">
             <FaCartPlus />
-            <span className="bg-blue-600 px-1 w-[18px] h-[18px] text-[10px] rounded-full text-white absolute border-white border-3 text-center top-[-8px] left-7">
-              7
+            <span className="absolute top-[-15px] left-7">
+              <span className="bg-[#1B7FED] px-1  w-[30px] h-[30px]  text-[12px] rounded-full text-white border-white border-3 text-center">
+                7
+              </span>
             </span>
           </p>
           <p className="border-l-2 pl-3 relative">
             <FaRegHeart />
-            <span className="bg-blue-600 px-1  w-[18px] h-[18px]  text-[10px] rounded-full text-white absolute border-white border-3 text-center top-[-8px] left-7">
-              2
+            <span className="absolute top-[-15px] left-7">
+              <span className="bg-[#1B7FED] px-1  w-[30px] h-[30px]  text-[12px] rounded-full text-white border-white border-3 text-center">
+                2
+              </span>
             </span>
           </p>
         </div>
