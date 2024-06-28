@@ -37,7 +37,7 @@ const FooterBottom = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-black bg-opacity-65 h-full md:h-[300px] lg:h-[300px]  pb-5">
+      <div className=" bg-black bg-opacity-65 h-full md:h-[350px] lg:h-[400px]  pb-5">
         <div className="grid grid-cols-1 gap-y-5 md:grid-cols-4 lg:grid-cols-4 text-white layout-width py-10">
           <div className="font-thin ">
             <Image
@@ -64,6 +64,7 @@ const FooterBottom = () => {
                 width={160}
                 height={80}
                 alt="logo"
+                className="ml-2"
               />
             </div>
           </div>
