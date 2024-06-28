@@ -24,7 +24,7 @@ const ProductCart = ({
   };
 }) => {
   return (
-    <div className="w-[228px] rounded-md mt-12 [box-shadow:rgba(0,_0,_0,_0.1)_0px_4px_6px_-1px,_rgba(0,_0,_0,_0.06)_0px_2px_4px_-1px]">
+    <div className="w-[228px] rounded-md [box-shadow:rgba(0,_0,_0,_0.1)_0px_4px_6px_-1px,_rgba(0,_0,_0,_0.06)_0px_2px_4px_-1px]">
       <div className="p-[18px] relative">
         <div
           className=""

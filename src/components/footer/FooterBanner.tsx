@@ -10,31 +10,31 @@ import { IoLogoAndroid } from "react-icons/io";
 const dateSet = [
   {
     id: 1,
-    icon: <RiMoneyDollarCircleLine className="text-3xl" />,
+    icon: <RiMoneyDollarCircleLine className="text-4xl" />,
     title: "Greate Value",
     description: "We offer competitive prices on over 100 million items",
   },
   {
     id: 2,
-    icon: <TbTruckDelivery className="text-3xl" />,
+    icon: <TbTruckDelivery className="text-4xl" />,
     title: "Whole Country Shipping",
     description: "We ship all over the country at any time, anywhere",
   },
   {
     id: 3,
-    icon: <MdOutlinePayment className="text-3xl" />,
+    icon: <MdOutlinePayment className="text-4xl" />,
     title: "Safe Payment",
     description: "Pay with secure payment method",
   },
   {
     id: 4,
-    icon: <MdOutlineSupportAgent className="text-3xl" />,
+    icon: <MdOutlineSupportAgent className="text-4xl" />,
     title: "24/7 Support",
     description: "Pay with secure payment method",
   },
   {
     id: 5,
-    icon: <MdOutlineLanguage className="text-3xl" />,
+    icon: <MdOutlineLanguage className="text-4xl" />,
     title: "Multiple Language",
     description: "Our comes with multiple language support",
   },
@@ -42,8 +42,8 @@ const dateSet = [
     id: 6,
     icon: (
       <span className="flex justify-between items-center">
-        <FaApple className="text-3xl" /> &nbsp;{" "}
-        <IoLogoAndroid className="text-3xl" />
+        <FaApple className="text-4xl" /> &nbsp;{" "}
+        <IoLogoAndroid className="text-4xl" />
       </span>
     ),
     title: "Multiple Language",
@@ -53,7 +53,7 @@ const dateSet = [
 
 const FooterBanner = () => {
   return (
-    <div className="flex items-center flex-col md:flex-row lg:flex-row md:justify-between lg:justify-between my-3 w-[80%] mx-auto">
+    <div className="flex items-center flex-col md:flex-row lg:flex-row md:justify-between lg:justify-between w-[80%] mx-auto my-10">
       {dateSet?.map((item, index) => (
         <div
           key={item.id}
@@ -66,7 +66,7 @@ const FooterBanner = () => {
               {item.icon}
             </div>
             <div className="my-3">
-              <h3 className="font-semibold text-base">{item.title}</h3>
+              <h3 className="font-bold text-base">{item.title}</h3>
               <p className="mt-3 text-[12px]">{item.description}</p>
             </div>
           </div>

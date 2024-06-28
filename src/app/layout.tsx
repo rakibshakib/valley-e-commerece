@@ -15,15 +15,17 @@ type Props = Readonly<{
   children: React.ReactNode;
   feature: React.ReactNode;
   products: React.ReactNode;
+  recommended: React.ReactNode;
 }>;
 
-export default function RootLayout({ children, feature, products }: Props) {
+export default function RootLayout({ children, feature, products, recommended }: Props) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <NavbarContaner />
         {feature}
         {children}
+        {recommended}
         {products}
         <FooterContainer />
       </body>

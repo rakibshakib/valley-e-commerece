@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -8,14 +9,15 @@ const FooterBottom = () => {
   return (
     <div
       style={{
-        backgroundImage: "url('./images/footerBg.png')",
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)), url('./images/footerBg.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="bg-[#1B7FED] bg-opacity-45  h-[65px] pt-2">
-        <div className="grid grid-cols-3 justify-items-center content-center">
+      <div className="bg-[#1B7FED] bg-opacity-30 h-full md:h-[100px] lg:h-[100px] pt-8 pb-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 justify-items-center content-center">
           <div className="w-[100px] "></div>
           <div className="social-media-icon mt-3 ">
             <div className="flex justify-between items-center text-white gap-4">
@@ -26,7 +28,7 @@ const FooterBottom = () => {
             </div>
           </div>
 
-          <div className="flex items-center text-white  ">
+          <div className="flex-center text-white  ">
             <FaPhoneAlt className="text-2xl" />
             <div className="ml-3">
               <p>Hotline</p>
@@ -35,30 +37,57 @@ const FooterBottom = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black bg-opacity-70  h-[300px]">
-        <div className="grid grid-cols-4 text-white w-[80%] mx-auto">
-          <div>Social media</div>
-          <div>
-            <h4>Accounts</h4>
-            <ul>
+      <div className=" bg-black bg-opacity-65 h-full md:h-[300px] lg:h-[300px]  pb-5">
+        <div className="grid grid-cols-1 gap-y-5 md:grid-cols-4 lg:grid-cols-4 text-white w-[80%] mx-auto py-10">
+          <div className="font-thin ">
+            <Image
+              src="/images/6vally-logo-1.png"
+              width={160}
+              height={80}
+              alt="logo"
+            />
+            <p className="my-3">
+              Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra
+              enim erat tortor ultricies{" "}
+            </p>
+            <p className="my-3">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+            <p className="my-3">support@example.com</p>
+            <div className="flex-center my-3">
+              <Image
+                src="/images/googlePay.png"
+                width={160}
+                height={80}
+                alt="logo"
+              />
+              <Image
+                src="/images/applePay.png"
+                width={160}
+                height={80}
+                alt="logo"
+              />
+            </div>
+          </div>
+          <div className="justify-self-start md:justify-self-end lg:justify-self-end">
+            <h4 className="text-xl font-bold">Accounts</h4>
+            <ul className="flex flex-col gap-y-5 mt-5 font-thin">
               <li>Become & Delivary Man</li>
               <li>Open your store</li>
               <li>Profile</li>
               <li>Help & Support</li>
             </ul>
           </div>
-          <div>
-            <h4>Quic Links</h4>
-            <ul>
+          <div className="justify-self-start md:justify-self-end lg:justify-self-end">
+            <h4 className="text-xl font-bold">Quic Links</h4>
+            <ul className="flex flex-col gap-y-5 mt-5 font-thin">
               <li>Become & Delivary Man</li>
               <li>Open your store</li>
               <li>Profile</li>
               <li>Help & Support</li>
             </ul>
           </div>
-          <div>
-            <h4>Other</h4>
-            <ul>
+          <div className="justify-self-start md:justify-self-end lg:justify-self-end">
+            <h4 className="text-xl font-bold">Other</h4>
+            <ul className="flex flex-col gap-y-5 mt-5 font-thin">
               <li>Become & Delivary Man</li>
               <li>Open your store</li>
               <li>Profile</li>
@@ -67,8 +96,8 @@ const FooterBottom = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#1B7FED] bg-opacity-35   h-[30px] text-white text-center text-sm">
-        All rights reserved by © 2021
+      <div className="bg-[#1B7FED] bg-opacity-35 h-[50px] text-white text-center text-sm pt-5">
+        2021 COPYRIGHT All Rights Reserved By 6amMart.com
       </div>
     </div>
   );

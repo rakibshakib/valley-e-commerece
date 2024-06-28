@@ -1,13 +1,19 @@
-import Featuate from "./@feature/page";
-import Products from "./@products/page";
-
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center bg-[#FFFFFF] my-5">
-      {/* <Featuate />
-      <Products /> */}
-      <div className="my-5 h-[150px] bg-gray-400">
-        <h2 className="text-center mt-3">Recommended For You</h2>
+    <div className="flex flex-col justify-center bg-[#FFFFFF] mt-5">
+      <div className="mt-5 h-[100px]">
+        <h2 className="text-center mt-3 text-2xl font-semibold">
+          Recommended For You
+        </h2>
+        <div className="text-center w-[50%] mx-auto mt-3">
+          <ul className="flex-center-between font-bold">
+            <li>Featured Products</li>
+            <li>Top Rated</li>
+            <li>Best Selling</li>
+            <li>Latest Products</li>
+            <li>New Arrivals</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

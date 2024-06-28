@@ -5,7 +5,7 @@ interface RatingProps {
   totalStars?: number;
 }
 
-const Rating: React.FC<RatingProps> = ({ rating, totalStars = 5 }) => {
+const Rating: React.FC<RatingProps> = ({ rating = 0, totalStars = 5 }) => {
   // Ensure rating is within the bounds of 0 and totalStars
   const filledStars = Math.min(Math.max(Math.floor(rating), 0), totalStars);
   const emptyStars = totalStars - filledStars;
