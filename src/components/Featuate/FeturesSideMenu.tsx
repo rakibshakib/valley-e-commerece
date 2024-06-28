@@ -2,7 +2,7 @@ import { FaAngleRight } from "react-icons/fa";
 
 const FeturesSideMenu = ({ data }: { data: any[] }) => {
   return (
-    <div className="w-full m:w-[270px] border">
+    <div className="w-full m:w-[270px] h-[410px] border shadow-sm">
       <ul className="px-3 w-full">
         {data?.length > 0 &&
           data?.slice(0, 8)?.map((item: any, id: number) => (

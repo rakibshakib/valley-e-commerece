@@ -14,11 +14,11 @@ const FeatureMenuBar = ({data = []} : {data?: any[]}) => {
         <div className="flex-column md:flex-center lg:flex-center">
           <div className="flex justify-between items-center bg-[#1B7FED] text-white w-full md:w-[270px] lg:w-[270px] px-4 py-4">
             <IoIosMenu
-              className="text-2xl"
+              className="text-2xl cursor-pointer"
               onClick={() => setToggle(!toggle)}
             />
             <p>Browser Category</p>
-            <IoIosArrowDown onClick={() => setToggle(!toggle)} />
+            <IoIosArrowDown className="cursor-pointer" onClick={() => setToggle(!toggle)} />
           </div>
           <div className="w-full md:hidden block">
             {toggle && <FeturesSideMenu data={data} />}

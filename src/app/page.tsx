@@ -16,7 +16,7 @@ export default async function Home() {
             <div className="hidden md:block">
               <FeturesSideMenu data={data} />
             </div>
-            <div className="w-full">
+            <div className="w-full mt-5">
               <FetureImage />
             </div>
           </div>

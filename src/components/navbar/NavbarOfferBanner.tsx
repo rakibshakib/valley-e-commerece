@@ -18,7 +18,7 @@ const NavbarOfferBanner = () => {
         <div className="layout-width">
           <div className="flex justify-between">
             <IoClose className="inline text-2xl cursor-pointer" onClick={() => setVisable(!visable)} />
-            <p className="text-center text-[#005ABC] font-bold">
+            <p className="text-center text-[#005ABC] font-bold text-[12px] md:text-[16px]">
               50% Off On Black Friday For All Stores {`>`} Valid Until 31
               January, 2023
             </p>
