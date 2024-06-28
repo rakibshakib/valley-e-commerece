@@ -15,7 +15,7 @@ const NavbarOfferBanner = () => {
           padding: "10px 0",
         }}
       >
-        <div className="w-[80%] mx-auto">
+        <div className="layout-width">
           <div className="flex justify-between">
             <IoClose className="inline text-2xl cursor-pointer" onClick={() => setVisable(!visable)} />
             <p className="text-center text-[#005ABC] font-bold">

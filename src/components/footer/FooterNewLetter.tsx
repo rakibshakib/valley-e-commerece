@@ -3,7 +3,7 @@ import { CiMail } from "react-icons/ci";
 
 const FooterNewLetter = () => {
   return (
-    <div className="bg-blue-900 text-white flex flex-col md:flex-row lg:flex-row md:justify-between lg:justify-between  items-center h-[200px] md:h-[120px] px-12 py-3 md:rounded-lg w-[80%] mx-auto my-5">
+    <div className="bg-blue-900 text-white flex flex-col md:flex-row lg:flex-row md:justify-between lg:justify-between  items-center h-[200px] md:h-[120px] px-12 py-3 md:rounded-lg layout-width my-5">
       <div>
         <h2 className="font-semibold text-xl">News Letter</h2>
         <p className="text-[14px] mt-2">

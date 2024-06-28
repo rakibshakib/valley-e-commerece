@@ -10,8 +10,8 @@ import { FaCartPlus } from "react-icons/fa";
 
 const NavSearchComp = () => {
   return (
-    <div className="w-[80%] mx-auto">
-      <div className="flex justify-between items-center py-5">
+    <div className="layout-width">
+      <div className="flex-column  md:flex-center-between lg:flex-center-between py-5">
         <div>
           <Image
             src="/images/6vally-logo.png"
@@ -36,25 +36,25 @@ const NavSearchComp = () => {
             <IoIosSearch className="text-white text-center text-xl" />
           </p>
         </div>
-        <div className="flex justify-between items-center gap-8 text-2xl text-gray-700">
+        <div className="flex justify-between items-center gap-8 text-2xl text-gray-700 mt-10 md:mt-0 lg:mt-0">
           <p>
             <FaRegUserCircle />
           </p>
           <p className="border-l-2 pl-3 relative">
             <MdCompareArrows />
-            <span className="bg-blue-600 px-1 w-8 text-[14px] rounded-full text-white absolute border-white border-3 text-center top-[-18px] left-7">
+            <span className="bg-blue-600 px-1 w-[18px] h-[18px] text-[10px] rounded-full text-white absolute border-white border-3 text-center top-[-8px] left-7">
               3
             </span>
           </p>
           <p className="border-l-2 pl-3 relative">
             <FaCartPlus />
-            <span className="bg-blue-600 px-1 w-8 text-[14px] rounded-full text-white absolute border-white border-3 text-center top-[-18px] left-7">
+            <span className="bg-blue-600 px-1 w-[18px] h-[18px] text-[10px] rounded-full text-white absolute border-white border-3 text-center top-[-8px] left-7">
               7
             </span>
           </p>
           <p className="border-l-2 pl-3 relative">
             <FaRegHeart />
-            <span className="bg-blue-600 px-1 w-8 text-[14px] rounded-full text-white absolute border-white border-3 text-center top-[-18px] left-7">
+            <span className="bg-blue-600 px-1  w-[18px] h-[18px]  text-[10px] rounded-full text-white absolute border-white border-3 text-center top-[-8px] left-7">
               2
             </span>
           </p>

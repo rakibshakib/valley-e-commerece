@@ -17,9 +17,9 @@ const FooterBottom = () => {
       }}
     >
       <div className="bg-[#1B7FED] bg-opacity-30 h-full md:h-[100px] lg:h-[100px] pt-8 pb-5">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 justify-items-center content-center">
-          <div className="w-[100px] "></div>
-          <div className="social-media-icon mt-3 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 justify-items-center content-center layout-width">
+          <div className="w-0 md:[w-100px]"></div>
+          <div className="social-media-icon mt-3 mb-3">
             <div className="flex justify-between items-center text-white gap-4">
               <FaTwitter className="text-2xl" />
               <FaInstagram className="text-2xl" />
@@ -28,17 +28,17 @@ const FooterBottom = () => {
             </div>
           </div>
 
-          <div className="flex-center text-white  ">
+          <div className="flex-center text-white md:justify-self-end lg:justify-self-end">
             <FaPhoneAlt className="text-2xl" />
-            <div className="ml-3">
-              <p>Hotline</p>
+            <div className="ml-3 mt-2 md:mt-0 flex items-center md:flex-col lg:flex-col md:items-start lg:items-start">
+              <p className="mr-3">Hotline</p>
               <p>01774747474</p>
             </div>
           </div>
         </div>
       </div>
       <div className=" bg-black bg-opacity-65 h-full md:h-[300px] lg:h-[300px]  pb-5">
-        <div className="grid grid-cols-1 gap-y-5 md:grid-cols-4 lg:grid-cols-4 text-white w-[80%] mx-auto py-10">
+        <div className="grid grid-cols-1 gap-y-5 md:grid-cols-4 lg:grid-cols-4 text-white layout-width py-10">
           <div className="font-thin ">
             <Image
               src="/images/6vally-logo-1.png"

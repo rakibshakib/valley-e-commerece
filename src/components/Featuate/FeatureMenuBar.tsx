@@ -6,26 +6,26 @@ import { RiDiscountPercentFill } from "react-icons/ri";
 const FeatureMenuBar = () => {
   return (
     <div className="border-t border-b">
-      <div className="w-[80%] mx-auto">
+      <div className="w-full md:layout-width lg:layout-width  mx-auto">
         <div className="flex-column md:flex-center lg:flex-center">
-          <div className="flex justify-between items-center bg-[#1B7FED] text-white w-[270px] px-4 py-4">
+          <div className="flex justify-between items-center bg-[#1B7FED] text-white w-full md:w-[270px] lg:w-[270px] px-4 py-4">
             <IoIosMenu className="text-2xl" />
             <p>Browser Category</p>
             <IoIosArrowDown />
           </div>
-          <div className="ml-28">
+          <div className="ml-5 md:ml-28 lg:ml-28 hidden md:block lg:block">
             <ul className="flex-column md:flex-center-between lg:flex-center-between py-2 font-bold gap-x-10">
               <li>Home</li>
-              <li className="flex-center-between gap-x-3">
+              <li className="flex flex-row justify-start md:flex-center-between lg:flex-center-between gap-x-3">
                 <span>Offer</span> <IoIosArrowDown />
               </li>
-              <li className="flex-center-between items-center gap-x-3">
+              <li className="flex flex-row justify-start md:flex-center-between lg:flex-center-between gap-x-3">
                 <span>Store</span> <IoIosArrowDown />
               </li>
-              <li className="flex-center-between items-center gap-x-3">
+              <li className="flex flex-row justify-start md:flex-center-between lg:flex-center-between gap-x-3">
                 <span>Brands</span> <IoIosArrowDown />
               </li>
-              <li className="flex-center-between items-center gap-x-2">
+              <li className="flex flex-row justify-start md:flex-center-between lg:flex-center-between gap-x-2">
                 <span>Discound Products</span>{" "}
                 <RiDiscountPercentFill className="text-[#FFBE00] text-3xl" />
               </li>

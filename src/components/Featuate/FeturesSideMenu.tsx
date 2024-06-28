@@ -8,7 +8,7 @@ const FeturesSideMenu = async () => {
     <div className="w-[270px] border">
       <ul className="px-3 w-full">
         {data?.slice(0, 8)?.map((item: any, id: number) => (
-          <li key={item?.id} className={`list-none cursor-pointer flex-center-between hover:bg-gray-100 py-3 ${id === data?.length - 1 ? "" : "border-b"}`}>
+          <li key={item?.id} className={`list-none cursor-pointer w-[245px] flex-center-between hover:bg-gray-100 py-3 ${id === data?.length - 1 ? "" : "border-b"}`}>
             <span>{item?.name} </span> <FaAngleRight />
           </li>
         ))}

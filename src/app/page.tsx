@@ -6,7 +6,7 @@ export default function Home() {
           Recommended For You
         </h2>
         <div className="text-center w-[50%] mx-auto mt-3">
-          <ul className="flex-center-between font-bold">
+          <ul className="flex-column  md:flex-center-between lg:flex-center-between font-bold">
             <li>Featured Products</li>
             <li>Top Rated</li>
             <li>Best Selling</li>

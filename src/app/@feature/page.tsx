@@ -6,10 +6,10 @@ const Feature = () => {
   return (
     <div>
       <FeatureMenuBar />
-      <div className="w-[80%] mx-auto">
+      <div className="layout-width">
         <div className="flex gap-x-5">
           <FeturesSideMenu />
-         <div className="">
+         <div className="w-full">
          <FetureImage />
          </div>
         </div>
