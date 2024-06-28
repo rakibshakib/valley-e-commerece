@@ -1,17 +1,18 @@
-// export const Products = () => {
-//     return(
-//         <h1>
-//             Hello Product
-//         </h1>
-//     )
-// }
-import React from "react";
+import ProductCart from "@/components/ProductCart";
+import { apiHelper } from "@/utils/helper";
 
-const Products = () => {
-  for (let index = 0; index < 100000000; index++) {
-
-  }
-  return <div>products</div>;
+const Products = async () => {
+  const data = await apiHelper.getAllTopRatedProduct();
+  // console.log(data);
+  return (
+    <div className="w-[80%] mx-auto">
+      <div className="grid grid-cols-5 gap-x-4 gap-y-10">
+        {data?.products?.map((product: any) => (
+          <ProductCart key={product.id} product={product} />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Products;

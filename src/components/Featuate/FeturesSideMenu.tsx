@@ -1,28 +1,9 @@
-import { baseAPI } from "@/utils";
-import React from "react";
-import { IoIosArrowDown } from "react-icons/io";
+import { apiHelper } from "@/utils/helper";
 import { FaAngleRight } from "react-icons/fa";
 
 
-async function getData() {
-  try {
-    const res = await fetch(`${baseAPI}/categories?guest_id=1`, {
-      next: { revalidate: 3600 },
-    });
-
-    if (!res.ok) {
-      throw new Error("Failed to fetch data");
-    }
-
-    return res.json();
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    throw error;
-  }
-}
-
 const FeturesSideMenu = async () => {
-  const data = await getData();
+  const data = await apiHelper.getAllCategoriedData();
   return (
     <div className="w-[270px] border">
       <ul className="px-3">
