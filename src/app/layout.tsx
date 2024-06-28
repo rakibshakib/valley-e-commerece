@@ -4,7 +4,7 @@ import "./globals.css";
 import FooterContainer from "@/components/footer/FooterContainer";
 import NavbarContaner from "@/components/navbar/NavbarContaner";
 
-const inter = Mulish({ subsets: ["latin"] });
+const inter = Mulish({ subsets: ["latin"] }); // font
 
 export const metadata: Metadata = {
   title: "6 Valley",
@@ -13,22 +13,15 @@ export const metadata: Metadata = {
 
 type Props = Readonly<{
   children: React.ReactNode;
-  feature: React.ReactNode;
   products: React.ReactNode;
   recommended: React.ReactNode;
 }>;
 
-export default function RootLayout({
-  children,
-  feature,
-  products,
-  recommended,
-}: Props) {
+export default function RootLayout({ children, products, recommended }: Props) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <NavbarContaner />
-        {feature}
         {children}
         {recommended}
         {products}

@@ -1,3 +1,4 @@
+// Desc: All the global variables are declared here
 export const baseAPI = `https://6valley.6amtech.com/api/v1`;
 
 export const categoryImg =

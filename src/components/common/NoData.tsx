@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
+// no data component
 const NoData = () => {
   return (
     <div className="flex items-center justify-centers">

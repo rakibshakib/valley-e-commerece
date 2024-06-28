@@ -1,5 +1,8 @@
 import React from "react";
 
+/* 
+ - This is a skeleton component for the cart.
+*/
 const Cartskeleton = () => {
   return (
     <div className="w-[228px] rounded-md mt-12 skeleton-cart">
