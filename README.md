@@ -12,7 +12,7 @@ Valley-6 is a web application built with Next.js 14, React 18, and Tailwind CSS.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/valley-6.git
+git clone https://github.com/rakibshakib/valley-e-commerece.git
 cd valley-6
 ```
 
