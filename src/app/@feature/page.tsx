@@ -8,10 +8,12 @@ const Feature = () => {
       <FeatureMenuBar />
       <div className="layout-width">
         <div className="flex gap-x-5">
-          <FeturesSideMenu />
-         <div className="w-full">
-         <FetureImage />
-         </div>
+          <div className="hidden md:block">
+            <FeturesSideMenu />
+          </div>
+          <div className="w-full">
+            <FetureImage />
+          </div>
         </div>
       </div>
     </div>

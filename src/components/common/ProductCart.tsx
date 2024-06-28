@@ -40,10 +40,10 @@ const imageIconHoverList: {
 
 const ProductCart = ({
   product,
-  isNews = true,
+  isNew = true,
 }: {
   product: IProductCart;
-  isNews?: boolean;
+  isNew?: boolean;
 }) => {
   return (
     <div
@@ -95,7 +95,7 @@ const ProductCart = ({
         <section className="absolute top-[11px] left-[11px] ">
           <div className="flex justify-between w-[225px]">
             <div>
-              {isNews && (
+              {isNew && (
                 <p className="isNew w-[42px] text-[11px] text-center text-white bg-black rounded-md ">
                   New
                 </p>

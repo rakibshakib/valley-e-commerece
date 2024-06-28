@@ -1,3 +1,5 @@
+import ProductList from "@/components/Product/ProductList";
+import ProductSlider from "@/components/Product/ProductSlider";
 import NoData from "@/components/common/NoData";
 import ProductCart from "@/components/common/ProductCart";
 import { apiHelper } from "@/utils/helper";
@@ -8,11 +10,14 @@ const Recommended = async () => {
   return (
     <div className="layout-width">
       {data?.products?.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 justify-items-center md:justify-items-start lg:justify-items-start gap-x-4 gap-y-10">
-          {data?.products?.map((product: any) => (
-            <ProductCart key={product.id} product={product} />
-          ))}
-        </div>
+        <>
+          <div className="hidden md:block">
+            <ProductList products={data.products} isNew={true} />
+          </div>
+          <div className="md:hidden">
+            <ProductSlider products={data.products}  isNew={true} />
+          </div>
+        </>
       ) : (
         <NoData />
       )}

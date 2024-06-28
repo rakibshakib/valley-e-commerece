@@ -11,7 +11,7 @@ import { FaCartPlus } from "react-icons/fa";
 const NavSearchComp = () => {
   return (
     <div className="layout-width">
-      <div className="flex-column  md:flex-center-between lg:flex-center-between py-5">
+      <div className="flex-column md:flex-center-between lg:flex-center-between py-5">
         <div>
           <Image
             src="/images/6vally-logo.png"
@@ -20,7 +20,7 @@ const NavSearchComp = () => {
             alt="logo"
           />
         </div>
-        <div className="flex justify-between items-center border rounded-3xl">
+        <div className="order-2 md:order-1 flex justify-between items-center border rounded-3xl ">
           <div className="border-r-2 mr-2 px-2 py-2 flex justify-between items-center">
             <IoIosMenu className="text-xl mx-2" />
             <IoIosArrowDown className="text-xl" />
@@ -36,7 +36,7 @@ const NavSearchComp = () => {
             <IoIosSearch className="text-white text-center text-xl" />
           </p>
         </div>
-        <div className="flex justify-between items-center gap-8 text-2xl text-gray-700 mt-10 md:mt-0 lg:mt-0">
+        <div className="order-1 md:order-2 flex justify-between items-center gap-8 text-2xl text-gray-700 mb-5 mt-2 mb:mt-10 md:mt-0 lg:mt-0 w-[280px] mx-auto md:w-auto md:mx-0">
           <p>
             <FaRegUserCircle />
           </p>
