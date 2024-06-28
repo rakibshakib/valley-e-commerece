@@ -4,13 +4,7 @@ import React from "react";
 const FetureImage = () => {
   return (
     <div className="grid grid-cols-1 md:grid-rows-3 md:grid-cols-3 gap-x-2 gap-y-3 h-[380px]">
-      <div
-        className="md:col-span-2 md:row-span-2"
-        style={{
-          width: "100%",
-          height: "245px",
-        }}
-      >
+      <div className="md:col-span-2 md:row-span-2 w-full h-[150px] md:h-[245px]">
         <Image
           src={`/images/Banner.png`}
           alt="6-valley product"
@@ -22,13 +16,7 @@ const FetureImage = () => {
           }}
         />
       </div>
-      <div
-        className="md:row-span-3 hidden md:block"
-        style={{
-          width: "100%",
-          height: "400px",
-        }}
-      >
+      <div className="md:row-span-3 hidden md:block w-full md:h-[400px]">
         <Image
           src={`/images/Card.png`}
           alt="6-valley product"
@@ -40,13 +28,7 @@ const FetureImage = () => {
           }}
         />
       </div>
-      <div
-        className=""
-        style={{
-          width: "100%",
-          height: "130px",
-        }}
-      >
+      <div className="w-full h-[130px] md:h-[130px]">
         {" "}
         <Image
           src={`/images/thithcho2.png`}
@@ -59,13 +41,7 @@ const FetureImage = () => {
           }}
         />
       </div>
-      <div
-        className=""
-        style={{
-          width: "100%",
-          height: "130px",
-        }}
-      >
+      <div className="w-full h-[130px] md:h-[130px]">
         {" "}
         <Image
           src={`/images/thithcho3.png`}

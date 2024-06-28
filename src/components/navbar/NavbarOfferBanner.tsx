@@ -12,11 +12,12 @@ const NavbarOfferBanner = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          padding: "10px 0",
+          height: "40px",
+          // padding: "10px 0",
         }}
       >
         <div className="layout-width">
-          <div className="flex justify-between">
+          <div className="flex justify-between pt-2">
             <IoClose className="inline text-2xl cursor-pointer" onClick={() => setVisable(!visable)} />
             <p className="text-center text-[#005ABC] font-bold text-[12px] md:text-[16px]">
               50% Off On Black Friday For All Stores {`>`} Valid Until 31

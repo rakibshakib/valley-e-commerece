@@ -53,7 +53,7 @@ const dateSet = [
 
 const FooterBanner = () => {
   return (
-    <div className="flex items-center flex-col md:flex-row lg:flex-row md:justify-between lg:justify-between layout-width my-10">
+    <div className="bg-[#F2F3F4] flex items-center flex-col md:flex-row lg:flex-row md:justify-between lg:justify-between layout-width my-10">
       {dateSet?.map((item, index) => (
         <div
           key={item.id}

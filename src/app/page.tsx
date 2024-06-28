@@ -24,7 +24,7 @@ export default async function Home() {
       </div>
       <div className="flex flex-col justify-center bg-[#FFFFFF] my-5">
         <div className="mt-5 h-[100px]">
-          <h2 className="text-center mt-3 text-2xl font-semibold">
+          <h2 className="text-center mt-10 md:mt-3 text-xl md:text-2xl font-semibold">
             Recommended For You
           </h2>
           <div className="hidden md:block text-center w-[50%] mx-auto mt-0 md:mt-3">
