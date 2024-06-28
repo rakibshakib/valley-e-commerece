@@ -1,4 +1,4 @@
-import Cartskeleton from "@/components/Cartskeleton";
+import Cartskeleton from "@/components/common/Cartskeleton";
 
 const array = Array.from({ length: 10 }).fill(null); // Or any value you want
 

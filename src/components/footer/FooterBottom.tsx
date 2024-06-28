@@ -19,7 +19,7 @@ const FooterBottom = () => {
       <div className="bg-[#1B7FED] bg-opacity-30 h-full md:h-[100px] lg:h-[100px] pt-8 pb-5">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 justify-items-center content-center layout-width">
           <div className="w-0 md:[w-100px]"></div>
-          <div className="social-media-icon mt-3 mb-3">
+          <div className="social-media-icon mt-3 ">
             <div className="flex justify-between items-center text-white gap-4">
               <FaTwitter className="text-2xl" />
               <FaInstagram className="text-2xl" />

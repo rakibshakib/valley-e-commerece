@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Mulish } from "next/font/google";
+import { Mulish } from "next/font/google";
 import "./globals.css";
 import FooterContainer from "@/components/footer/FooterContainer";
 import NavbarContaner from "@/components/navbar/NavbarContaner";
@@ -18,7 +18,12 @@ type Props = Readonly<{
   recommended: React.ReactNode;
 }>;
 
-export default function RootLayout({ children, feature, products, recommended }: Props) {
+export default function RootLayout({
+  children,
+  feature,
+  products,
+  recommended,
+}: Props) {
   return (
     <html lang="en">
       <body className={inter.className}>

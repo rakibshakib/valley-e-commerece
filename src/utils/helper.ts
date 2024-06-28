@@ -7,13 +7,13 @@ async function getAllCategoriedData() {
     });
 
     if (!res.ok) {
-      throw new Error("Failed to fetch data");
+      console.log("error");
     }
 
     return res.json();
   } catch (error) {
     console.error("Error fetching data:", error);
-    throw error;
+    // throw error;
   }
 }
 
@@ -30,13 +30,13 @@ async function getAllTopRatedProduct({
     );
 
     if (!res.ok) {
-      throw new Error("Failed to fetch data");
+      console.error("Failed to fetch data");
     }
 
     return res.json();
   } catch (error) {
     console.error("Error fetching data:", error);
-    throw error;
+    // throw error;
   }
 }
 

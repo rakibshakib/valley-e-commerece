@@ -1,4 +1,4 @@
-import Cartskeleton from "@/components/Cartskeleton";
+import Cartskeleton from "@/components/common/Cartskeleton";
 
 export default function Loading() {
   // including a Skeleton.

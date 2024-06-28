@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import "../style/cart.css";
 
+
 @layer utilities {
     .flex-center-between {
         @apply flex justify-between items-center flex-row;
@@ -24,9 +25,11 @@
     .layout-width {
         @apply w-full md:w-[1200px] lg:w-[1200px] mx-auto
     }
-    .cart-box  {
-        @apply overflow-hidden transition-all duration-300 ease-[ease-in-out] relative shadow-[0_8.1793107986px_16.3586215973px_-2.4537930489px_rgba(145,158,171,0.05),0_0_1.635862112px_0_rgba(145,158,171,0.2)] rounded-[10px];
-      }
+
+    .cart-box {
+        @apply overflow-hidden transition-all duration-300 ease-[ease-in-out] relative  rounded-[10px];
+    }
+
 
     /* Hide scrollbar for IE, Edge and Firefox */
     .no-scrollbar {

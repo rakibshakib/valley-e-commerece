@@ -40,7 +40,14 @@ const imageIconHoverList: {
 
 const ProductCart = ({ product }: { product: IProductCart }) => {
   return (
-    <div className="w-[228px] cart-box">
+    <div
+      className="w-[228px] cart-box"
+      style={{
+        // boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.1)",
+        boxShadow: "rgba(0, 0, 0, 0.08) 0px 4px 12px",
+        borderRadius: "5px",
+      }}
+    >
       <div className="p-[10px] relative">
         <div
           style={{

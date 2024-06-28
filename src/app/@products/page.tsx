@@ -1,6 +1,5 @@
-import Cartskeleton from "@/components/Cartskeleton";
-import NoData from "@/components/NoData";
-import ProductCart from "@/components/ProductCart";
+import NoData from "@/components/common/NoData";
+import ProductCart from "@/components/common/ProductCart";
 import { apiHelper } from "@/utils/helper";
 import Image from "next/image";
 
