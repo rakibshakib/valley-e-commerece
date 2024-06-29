@@ -16,7 +16,7 @@ const Products = async () => {
       {data?.products?.length > 0 ? (
         <>
           <div className="hidden md:block">
-            <ProductList products={data.products} />
+            <ProductList products={data.products} isNew={false} />
           </div>
           <div className="md:hidden">
             <ProductSlider products={data.products} isNew={false} />
