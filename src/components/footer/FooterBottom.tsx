@@ -10,7 +10,7 @@ const FooterBottom = () => {
     <div
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)), url('./images/footerBg.png')`,
+        rgba(0, 0, 0, 0.6)), url('./images/footer.svg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
