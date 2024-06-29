@@ -18,3 +18,10 @@ interface RatingProps {
   rating: number;
   totalStars?: number;
 }
+
+interface ItabMenu{
+  type: string;
+  label: string;
+  icon: boolean;
+  active: boolean;
+}

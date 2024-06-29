@@ -32,8 +32,8 @@ const ProductSlider: React.FC<ImageSliderProps> = ({
   };
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto">
-      <div className="overflow-hidden relative w-full h-64 mx-auto">
+    <div className="relative w-full max-w-3xl mx-auto my-16">
+      <div className="overflow-hidden relative w-full h-[300px] mx-auto">
         {products.map((prod, index) => (
           <div
             key={prod.id}
